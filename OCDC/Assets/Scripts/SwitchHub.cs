@@ -31,10 +31,11 @@ public class SwitchHub : MonoBehaviour {
 			values++;
 		else
 			values--;
-		Debug.Log ("values: " + values);
-		if ((values == switches.Length || values == 0) && !obstacle.isSolved()) {
-			mainController.addObstacleSolved ();
+		//Debug.Log ("values: " + values);
+		if ((values == switches.Length || values == 0)) {
 			obstacle.solved ();
+		} else {
+			obstacle.notSolved ();
 		}
 	}
 }

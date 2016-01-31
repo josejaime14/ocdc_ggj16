@@ -28,14 +28,14 @@ public class Player : MonoBehaviour {
 		if(canWalk)
 			rigidBody.velocity = new Vector2 (Time.deltaTime*speed,rigidBody.velocity.y);
 	}
-
+	/*
 	void OnMouseDown() {
 		if (canJump) {
 			canJump = false;
 			rigidBody.AddForce (new Vector2 (rigidBody.velocity.x,jumpForce));
 		}
 	}
-
+	*/
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "door") {
 			mainController.CheckRoom ();

@@ -13,13 +13,14 @@ public class PictureFrameLvl2 : MonoBehaviour
 	private Obstacle obstacle;
 	private Vector3 startPoint, endPoint;
 	private MainGameController mainController;
-
+	private bool rotated;
 
 	// Use this for initialization
 	void Start (){
 		anim = GetComponent<Animator> ();
 		obstacle = GetComponent<Obstacle> ();
 		mainController =(MainGameController)GameObject.FindObjectOfType (typeof(MainGameController));
+		rotated = false;
 	}
 
 	void Update(){
@@ -28,7 +29,8 @@ public class PictureFrameLvl2 : MonoBehaviour
 	}
 	void OnMouseDown() {
 		//Debug.Log ("clicked");
-		startPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		if(rotated)
+			startPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 	}
 
 	/*
@@ -43,12 +45,18 @@ public class PictureFrameLvl2 : MonoBehaviour
 	*/
 
 	void OnMouseUp(){
-		endPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		if (Validate () && !obstacle.isSolved()) {
+		if (rotated) {
+			endPoint = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			if (Validate () && !obstacle.isSolved ()) {
+				obstacle.solved ();
+				//mainController.addObstacleSolved ();
+			}
+		} else {
 			anim.SetBool ("solved", true);
-			obstacle.solved ();
-			mainController.addObstacleSolved ();
 		}
+
+		rotated = true;
+
 	}
 
 	private bool Validate(){

@@ -1,0 +1,111 @@
+
+Odmund.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+loquillo07_07
+  rotate: false
+  xy: 177, 2
+  size: 58, 31
+  orig: 58, 31
+  offset: 0, 0
+  index: -1
+loquillo08_08
+  rotate: false
+  xy: 949, 212
+  size: 58, 18
+  orig: 58, 18
+  offset: 0, 0
+  index: -1
+loquillo09_09
+  rotate: true
+  xy: 251, 204
+  size: 58, 18
+  orig: 58, 18
+  offset: 0, 0
+  index: -1
+loquillo11_11
+  rotate: false
+  xy: 2, 18
+  size: 173, 244
+  orig: 173, 244
+  offset: 0, 0
+  index: -1
+loquillo13_13
+  rotate: false
+  xy: 177, 35
+  size: 72, 227
+  orig: 72, 227
+  offset: 0, 0
+  index: -1
+loquillo15_15
+  rotate: false
+  xy: 433, 267
+  size: 166, 242
+  orig: 166, 242
+  offset: 0, 0
+  index: -1
+loquillo16_16
+  rotate: false
+  xy: 601, 267
+  size: 166, 242
+  orig: 166, 242
+  offset: 0, 0
+  index: -1
+loquillo17_17
+  rotate: false
+  xy: 769, 282
+  size: 71, 227
+  orig: 71, 227
+  offset: 0, 0
+  index: -1
+loquillo19_19
+  rotate: false
+  xy: 842, 303
+  size: 85, 206
+  orig: 85, 206
+  offset: 0, 0
+  index: -1
+loquillo20_20
+  rotate: false
+  xy: 929, 303
+  size: 85, 206
+  orig: 85, 206
+  offset: 0, 0
+  index: -1
+loquillo27_27
+  rotate: true
+  xy: 842, 221
+  size: 80, 105
+  orig: 80, 105
+  offset: 0, 0
+  index: -1
+loquillo28_8
+  rotate: true
+  xy: 949, 232
+  size: 69, 66
+  orig: 69, 66
+  offset: 0, 0
+  index: -1
+loquillo29_9
+  rotate: false
+  xy: 258, 265
+  size: 173, 244
+  orig: 173, 244
+  offset: 0, 0
+  index: -1
+loquillo30_0
+  rotate: false
+  xy: 769, 237
+  size: 67, 43
+  orig: 67, 43
+  offset: 0, 0
+  index: -1
+loquillo31_1
+  rotate: false
+  xy: 2, 264
+  size: 254, 245
+  orig: 254, 245
+  offset: 0, 0
+  index: -1

@@ -11,8 +11,11 @@ public class MainGameController : MonoBehaviour
 	public string nextLevel;
 
 	private int solvedObstacles;
+	private bool isGameOver;
+
 	// Use this for initialization
 	void Start (){
+		isGameOver = false;
 		solvedObstacles = 0;
 		insanityDistort.material.SetVector ("_IntensityAndScrolling", new Vector4 (Player.insanity, Player.insanity, 0.1f, 0.2f));
 		StartCoroutine (AwakePlayer ());
@@ -20,16 +23,15 @@ public class MainGameController : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update (){
-
+		if (room.isSolved () && !isGameOver)
+			EndRoom ();
 	}
 
-	public void addObstacleSolved(){
-		solvedObstacles++;
-		if (solvedObstacles == room.obstacles.Length) {
-			//LoadNextLevel and reset insanity
-			player.speed *= 3;
-			StartCoroutine(EndTransition(1.0f));
-		}
+	void EndRoom(){
+		isGameOver = true;
+		player.speed *= 3;
+		Player.insanity = 0.0f;
+		StartCoroutine(EndTransition(1.0f));
 	}
 
 	public void removeObstacleSolved(){
@@ -39,6 +41,7 @@ public class MainGameController : MonoBehaviour
 	public void CheckRoom(){
 		if (room.isSolved ()) {
 			//LoadNextLevel and reset insanity
+			Player.insanity = 0.0f;
 			StartCoroutine(EndTransition(1.0f));
 		}else{
 			//RepeatLevel + insanity

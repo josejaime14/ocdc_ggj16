@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Obstacle : MonoBehaviour {
 
+	public BoxCollider2D tickTrigger;
 
 	private bool finished;
 
@@ -19,5 +20,11 @@ public class Obstacle : MonoBehaviour {
 
 	public void solved(){
 		finished = true;
+		tickTrigger.enabled = false;
+	}
+
+	public void notSolved(){
+		finished = false;
+		tickTrigger.enabled = true;
 	}
 }

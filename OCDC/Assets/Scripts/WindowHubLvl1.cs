@@ -26,10 +26,12 @@ public class WindowHubLvl1 : MonoBehaviour {
 			values++;
 		else
 			values--;
-		Debug.Log ("values: " + values);
-		if ((values == windows.Length) && !obstacle.isSolved()) {
-			mainController.addObstacleSolved ();
+		
+		if (values == windows.Length) {
+			//mainController.addObstacleSolved ();
 			obstacle.solved ();
+		} else {
+			obstacle.notSolved ();
 		}
 	}
 }
