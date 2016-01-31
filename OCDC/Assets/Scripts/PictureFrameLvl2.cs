@@ -64,7 +64,7 @@ public class PictureFrameLvl2 : MonoBehaviour
 
 			if (startPoint.y < endPoint.y && dragTypeY > 0) {//Up
 				isValid = true;
-			} else if (startPoint.y > endPoint.y && dragTypeX < 0) {//Down
+			} else if (startPoint.y > endPoint.y && dragTypeY < 0) {//Down
 				isValid = true;
 			}
 		}

@@ -1,13 +1,12 @@
 fileFormatVersion: 2
-guid: 5e7324be4db234dacb3bd1d0b4e1e973
-timeCreated: 1454214252
+guid: 07dcd1db080f84758aa6d238ccb06d08
+timeCreated: 1454221909
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: ventanas_0
     21300002: ventanas_1
     21300004: ventanas_2
-    21300006: ventanas_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -57,72 +56,53 @@ TextureImporter:
     - name: ventanas_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 346
-        width: 142
-        height: 105
+        x: 25
+        y: 361
+        width: 157
+        height: 116
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -71, y: 52.5}
-        - {x: -71, y: -52.5}
-        - {x: 71, y: -52.5}
-        - {x: 71, y: 52.5}
+      - - {x: -78.5, y: 58}
+        - {x: -78.5, y: -58}
+        - {x: 78.5, y: -58}
+        - {x: 78.5, y: 58}
     - name: ventanas_1
       rect:
         serializedVersion: 2
-        x: 225
-        y: 294
-        width: 142
-        height: 209
+        x: 13
+        y: 9
+        width: 181
+        height: 262
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -71, y: 104.5}
-        - {x: -71, y: -104.5}
-        - {x: 71, y: -104.5}
-        - {x: 71, y: 104.5}
+      - - {x: -90.5, y: 131}
+        - {x: -90.5, y: 76}
+        - {x: -87.5, y: -131}
+        - {x: 90.5, y: -131}
+        - {x: 90.5, y: 131}
     - name: ventanas_2
       rect:
         serializedVersion: 2
-        x: 40
-        y: 31
-        width: 164
-        height: 238
+        x: 222
+        y: 16
+        width: 181
+        height: 263
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 81, y: -119}
-        - {x: 82, y: -8}
-        - {x: 82, y: 119}
-        - {x: -82, y: 119}
-        - {x: -82, y: 56}
-        - {x: -80, y: -119}
-        - {x: -45, y: -119}
-        - {x: -45, y: -81}
-        - {x: 34, y: -119}
-    - name: ventanas_3
-      rect:
-        serializedVersion: 2
-        x: 296
-        y: 31
-        width: 164
-        height: 238
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -82, y: 119}
-        - {x: -82, y: 114}
-        - {x: -76, y: 114}
-        - {x: -76, y: -119}
-        - {x: 79, y: -119}
-        - {x: 79, y: 114}
-        - {x: 82, y: 114}
-        - {x: 82, y: 119}
+      - - {x: -90.5, y: 131.5}
+        - {x: -90.5, y: 125.5}
+        - {x: -83.5, y: 125.5}
+        - {x: -83.5, y: -131.5}
+        - {x: 86.5, y: -131.5}
+        - {x: 86.5, y: 125.5}
+        - {x: 90.5, y: 125.5}
+        - {x: 90.5, y: 131.5}
     outline: []
   spritePackingTag: 
   userData: 

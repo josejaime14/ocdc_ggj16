@@ -12,10 +12,13 @@ public class Player : MonoBehaviour {
 	private Rigidbody2D rigidBody;
 	private bool canJump;
 	private MainGameController mainController;
+	private Animator anim;
 
 	// Use this for initialization
 	void Start () {
 		rigidBody = GetComponent<Rigidbody2D> ();
+		anim = GetComponent<Animator> ();
+
 		mainController = (MainGameController) GameObject.FindObjectOfType (typeof(MainGameController));
 		canJump = true;
 	}
@@ -40,6 +43,12 @@ public class Player : MonoBehaviour {
 
 		if (coll.gameObject.tag == "floor") {
 			canJump = true;
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D coll){
+		if (coll.gameObject.tag == "tick") {
+			anim.SetTrigger ("tick");
 		}
 	}
 }
